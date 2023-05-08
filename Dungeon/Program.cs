@@ -86,11 +86,11 @@ namespace Dungeon
                 $"Now its time to build some stats. Your stats will be adjusted by the difficulty you selected in the beggining.\nPress Enter to Roll for your HitChance.");
             Console.ReadKey();
             Console.Clear();
-            player.HitChance = (int)(new Random().Next(50, 80) * difMult);
+            player.HitChance = (int)(new Random().Next(50, 70) * difMult);
             Console.WriteLine($"Nice you now have a HitChance of {player.HitChance}\n" +
                 $"Press enter to Roll for your Block Stat.");
             Console.ReadKey();
-            player.Block = (int)(new Random().Next(40, 70) * difMult);
+            player.Block = (int)(new Random().Next(20, 50) * difMult);
             Console.WriteLine($"Way to go you have a Block of {player.Block}\n" +
                 $"One more to go. Press enter to Roll for your MaxLife stat.");
             Console.ReadKey();
